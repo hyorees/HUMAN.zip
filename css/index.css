@@ -9,7 +9,7 @@ body {
         rgba(12, 12, 22, 0.7),
         rgba(64, 64, 75, 0.8)
     ),
-    url("images/background.png");
+    url("../images/background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -80,6 +80,7 @@ main {
         #36229b
     );
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 64px;
     color: white;

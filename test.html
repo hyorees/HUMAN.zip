@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title> 인간 유형 테스트</title>
-    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "css/test.css">
 </head>
 <body>
     <nav>
-        <div class = "logo">
+        <div class="back-btn" id="backBtn">
+            ←
+        </div>
+
+        <div class="logo">
             HUMAN.zip
         </div>
     </nav>
@@ -22,36 +26,14 @@
                 <div class = "progress"></div>
             </div>
 
-            <h1 class = "question">
-                시험기간 새벽 2시의 당신은?
+            <h1 class = "question" id = "question">
             </h1>
 
-            <div class = "answer-box">
-                <button class = "answer-btn">
-                    감성 플레이리스트 틀기
-                </button>
-
-                <button class = "answer-btn">
-                    - 릴스 5분만 보려 했는데 1시간 지나 있음
-                </button>
-
-                <button class = "answer-btn">
-                    - 커피 한 잔 하기
-                </button>
-
-                <button class = "answer-btn">
-                    - 갑자기 할 일 계획 세우기
-                </button>
-
-                <button class = "answer-btn">
-                    - 이어폰 끼고 산책 나가기
-                </button>
-
-                <button class = "answer-btn">
-                    - 시험기간 밈 찾아보기
-                </button>
+            <div class = "answer-box" id = "answerBox">
             </div>
         </div>
     </main>
+
+    <script src = "js/test.js"></script>
 </body>
 </html>
