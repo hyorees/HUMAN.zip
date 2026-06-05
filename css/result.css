@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(
+        rgba(12, 12, 22, 0.7),
+        rgba(64, 64, 75, 0.8)
+    ),
+    url("../images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+li:hover {
+    color: #CDBDFF;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #CDBDFF;
+    cursor: pointer;
+}
+
+.mode-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.result-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.result-card {
+    width: 700px;
+    background-color: rgba(73, 53, 85, 0.75);
+    border-radius: 24px;
+    padding: 40px 40px 40px 40px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#resultTitle {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+#resultKeyword {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #D8D8D8;
+}
+
+#resultColor {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+#resultFeatures {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#resultFeatures p {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+#resultMusic {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#resultMessage {
+    font-size: 20px;
+    font-weight: bold;
+    color: #CDBDFF;
+    margin-bottom: 30px;
+}
+
+#retryBtn {
+    background-color: #8B5CF6;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#retryBtn:hover {
+    background-color: #9F7AEA;
+    transform: scale(1.05);
+}
+
+#saveBtn {
+    background-color: #8B5CF6;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+#saveBtn:hover {
+    background-color: #9F7AEA;
+    transform: scale(1.05);
+}

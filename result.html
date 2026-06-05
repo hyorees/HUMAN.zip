@@ -3,8 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title> 인간 유형 테스트 </title>
+    <link rel = "stylesheet" href = "css/result.css">
 </head>
+<script src = "https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 <body>
+    <nav>
+        <div class="logo" id="homeBtn">
+            HUMAN.zip
+        </div>
+
+        <div class="nav-right">
+            <ul>
+                <li id="testMenu">
+                    테스트 시작
+                </li>
+
+                <li id="typesMenu">
+                    전체 유형 보기
+                </li>
+
+                <li id="introMenu">
+                    소개
+                </li>
+            </ul>
+
+            <button class="mode-btn" id="modeBtn">
+                🌙
+            </button>
+        </div>
+    </nav>
     
+    <main class = "result-main">
+        <div class = "result-card" id = "resultCard">
+            <h1 id = "resultTitle"></h1>
+            <div id = "resultKeyword"></div>
+            <div id = "resultColor"></div>
+            <div id = "resultFeatures"></div>
+            <p id = "resultMusic"></p>
+            <p id = "resultMessage"></p>
+            <button id = "retryBtn">
+                다시 테스트하기
+            </button>
+
+            <button id = "saveBtn">
+                결과 카드 저장하기
+            </button>
+        </div>
+    </main>
+
+<script src="js/result.js"></script>
 </body>
 </html>
