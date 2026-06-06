@@ -65,17 +65,17 @@ li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .result-card {
     width: 700px;
-    background-color: rgba(73, 53, 85, 0.75);
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 24px;
     padding: 40px 40px 40px 40px;
-    backdrop-filter: blur(10px);
     text-align: center;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
 #resultTitle {
@@ -86,7 +86,7 @@ li:hover {
 #resultKeyword {
     font-size: 18px;
     margin-bottom: 20px;
-    color: #D8D8D8;
+    color: #000000;
 }
 
 #resultColor {
@@ -104,18 +104,20 @@ li:hover {
 #resultFeatures p {
     margin-bottom: 10px;
     font-size: 17px;
+    color: #3b3b3b;
 }
 
 #resultMusic {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 18px;
+    color: #000000;
 }
 
 #resultMessage {
     font-size: 20px;
     font-weight: bold;
-    color: #CDBDFF;
+    color: #000000;
     margin-bottom: 30px;
 }
 

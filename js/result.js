@@ -23,6 +23,7 @@ const resultMessage = document.getElementById("resultMessage");
 const resultFeatures = document.getElementById("resultFeatures");
 const resultCard = document.getElementById("resultCard");
 const saveBtn = document.getElementById("saveBtn");
+const buttonBox = document.getElementById("buttonBox");
 
 const resultData = {
     emotional: {
@@ -35,8 +36,8 @@ const resultData = {
         ],
 
         music: "북향 - 다이나믹 듀오",
-        color: "#CDBDFF",
-        cardColor: "rgba(205, 189, 255, 0.25)",
+        color: "#9D4EDD",
+        cardColor: "#F3EEFF",
         message: "새벽은 당신에게 너무 많은 생각을 준다."
     },
 
@@ -50,8 +51,8 @@ const resultData = {
         ],
         
         music: "Dopamine - WING",
-        color: "#FFD6D6",
-        cardColor: "rgba(255, 214, 214, 0.25)",
+        color: "#FF5D8F",
+        cardColor: "#FFF0F7",
         message: "딱 5분만 보려고 했잖아..."
         },
 
@@ -65,8 +66,8 @@ const resultData = {
         ],
 
         music: "One fine day - MONKEY BGM",
-        color: "#FFE7C5",
-        cardColor: "rgba(255, 231, 197, 0.25)",
+        color: "#C77D3B",
+        cardColor: "#FFF6EE",
         message: "카페인은 이제 혈액의 일부다."
     },
 
@@ -80,8 +81,8 @@ const resultData = {
         ],
         
         music: "Bubble Gum - Clairo",
-        color: "#D9F7E5",
-        cardColor: "rgba(217, 247, 229, 0.25)",
+        color: "#52B788",
+        cardColor: "#EEFFF8",
         message: "계획은 완벽했는데 왜 아직 시작 전이지?"
         },
 
@@ -95,8 +96,8 @@ const resultData = {
         ],
 
         music: "인생영화 - pH-1",
-        color: "#D7E9FF",
-        cardColor: "rgba(215, 233, 255, 0.25)",
+        color: "#4D96FF",
+        cardColor: "#EEF6FF",
         message: "현실 OFF, 플레이리스트 ON"
     },
 
@@ -110,8 +111,8 @@ const resultData = {
         ],
         
         music: "REDRED - CORTIS",
-        color: "#E2F1D8",
-        cardColor: "rgba(226, 241, 216, 0.25)",
+        color: "#43AA8B",
+        cardColor: "#EEFFFC",
         message: "인터넷 속에도 사람들이 있다고..!"
         }
 };
@@ -138,10 +139,12 @@ retryBtn.addEventListener("click", function() {
 });
 
 saveBtn.addEventListener("click", function() {
+    buttonBox.style.display = "none";
     html2canvas(resultCard).then(function(canvas) {
         const link = document.createElement("a");
         link.download = "HUMAN.zip-result.png";
         link.href = canvas.toDataURL();
         link.click();
+        buttonBox.style.display = "flex";
     });
 });

@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 인간 유형 테스트 </title>
     <link rel = "stylesheet" href = "css/result.css">
+    <link rel = "stylesheet" href="css/theme.css">
 </head>
 <script src = "https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 <body>
@@ -41,16 +43,19 @@
             <div id = "resultFeatures"></div>
             <p id = "resultMusic"></p>
             <p id = "resultMessage"></p>
-            <button id = "retryBtn">
-                다시 테스트하기
-            </button>
+            <div class = "button-box" id = "buttonBox">
+                <button id = "retryBtn">
+                    다시 테스트하기
+                </button>
 
-            <button id = "saveBtn">
-                결과 카드 저장하기
-            </button>
+                <button id = "saveBtn">
+                    결과 카드 저장하기
+                </button>
+            </div>
         </div>
     </main>
 
 <script src="js/result.js"></script>
+<script src = "js/theme.js"></script>
 </body>
 </html>
