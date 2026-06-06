@@ -139,12 +139,10 @@ retryBtn.addEventListener("click", function() {
 });
 
 saveBtn.addEventListener("click", function() {
-    buttonBox.style.display = "none";
     html2canvas(resultCard).then(function(canvas) {
         const link = document.createElement("a");
         link.download = "HUMAN.zip-result.png";
         link.href = canvas.toDataURL();
         link.click();
-        buttonBox.style.display = "flex";
     });
 });
